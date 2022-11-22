@@ -1,0 +1,60 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+<!--
+    <record model="ir.ui.view" id="samv2_planing.list">
+      <field name="name">samv2_planing list</field>
+      <field name="model">samv2_planing.samv2_planing</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+-->
+
+    <!-- actions opening views on models -->
+<!--
+    <record model="ir.actions.act_window" id="samv2_planing.action_window">
+      <field name="name">samv2_planing window</field>
+      <field name="res_model">samv2_planing.samv2_planing</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+-->
+
+    <!-- server action to the one above -->
+<!--
+    <record model="ir.actions.server" id="samv2_planing.action_server">
+      <field name="name">samv2_planing server</field>
+      <field name="model_id" ref="model_samv2_planing_samv2_planing"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+-->
+
+    <!-- Top menu item -->
+<!--
+    <menuitem name="samv2_planing" id="samv2_planing.menu_root"/>
+-->
+    <!-- menu categories -->
+<!--
+    <menuitem name="Menu 1" id="samv2_planing.menu_1" parent="samv2_planing.menu_root"/>
+    <menuitem name="Menu 2" id="samv2_planing.menu_2" parent="samv2_planing.menu_root"/>
+-->
+    <!-- actions -->
+<!--
+    <menuitem name="List" id="samv2_planing.menu_1_list" parent="samv2_planing.menu_1"
+              action="samv2_planing.action_window"/>
+    <menuitem name="Server to list" id="samv2_planing" parent="samv2_planing.menu_2"
+              action="samv2_planing.action_server"/>
+-->
+  </data>
+</odoo>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="task_inherit">
+            <field name="name">sale.order.inherit</field>
+            <field name="model">project.task</field>
+            <field name="inherit_id" ref="project.view_task_form2" />
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='user_ids']" position="after">
+                    <field name="driver_id" string="Chaffeur"/>
+                    <field name="planned_date_begin" />
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>
